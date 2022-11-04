@@ -39,7 +39,7 @@ const moon = new THREE.Mesh(moonSphere, moonMaterial);
 moon.position.set(0, 20, 30)
 scene.add(moon)
 
-const ambientLight = new THREE.AmbientLight(0x333333);
+const ambientLight = new THREE.AmbientLight(0x000000);
 scene.add(ambientLight)
 
 const light = new THREE.DirectionalLight(0xffffff, 1)
