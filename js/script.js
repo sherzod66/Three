@@ -39,7 +39,7 @@ const moon = new THREE.Mesh(moonSphere, moonMaterial);
 moon.position.set(0, 20, 30)
 shapeEarth.add(moon)
 
-const ambientLight = new THREE.AmbientLight(0x333333);
+const ambientLight = new THREE.AmbientLight(0x111111);
 scene.add(ambientLight)
 
 const light = new THREE.DirectionalLight(0xffffff, 1)
@@ -55,6 +55,13 @@ function animate() {
 	renderer.render(scene, camera)
 }
 animate()
+
+
+window.addEventListener('resize', function(event) {
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectMatrix();
+	renderer.setSize(window.innerWidth, window.innerHeight);
+});
 
 
 /*flatShading: true,
