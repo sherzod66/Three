@@ -18,7 +18,7 @@ scene.add(axexHelper)
 
 
 //scene.add(cube);
-camera.position.set(0, 0, 20)
+camera.position.set(0, 0, 25)
 controls.update();
 
 const sphere = new THREE.SphereGeometry(10, 100, 100);
