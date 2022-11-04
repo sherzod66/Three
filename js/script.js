@@ -57,11 +57,12 @@ function animate() {
 animate()
 
 
-window.addEventListener('resize', function(event) {
+window.addEventListener('resize', function () {
 	camera.aspect = window.innerWidth / window.innerHeight;
-	camera.updateProjectMatrix();
+	camera.updateProjectionMatrix();
 	renderer.setSize(window.innerWidth, window.innerHeight);
-});
+})
+
 
 
 /*flatShading: true,
